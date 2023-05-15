@@ -143,8 +143,8 @@ body{
     color: rgb(226, 240, 247);
     transform: scale(1.1);
   }
-  .menu_element:first-child{
-    margin-top: 50px;
+  .menu_element{
+    margin-top: 20px;
   }
   .property_ul{
     padding-inline-start: 0px;
