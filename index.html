@@ -5,22 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./slick.min.js"></script>
+    <link rel="stylesheet" href="./slick.css">
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper-div">
         <div class="first-part">
             <div class="nav-blok">
-                <ul class="nav-blok__logo">
-                    <li class="logo-li"><p><img src="../img/main_logo.png" alt="logo"/></p></li>
-                    <li><p>Hounter</p></li>
-                </ul>
-                <ul class="nav-blok__links">
-                    <li class="link-item">About us</li>
-                    <li class="link-item">Article</li>
-                    <li class="link-item">Property<span class="link-item__span"><img src="./img/Vector.png"></span></li>
-                    <li class="nav-blok-btn">Sign Up!</li>
-                </ul>
+                <div>
+                    <ul class="nav-blok__logo">
+                        <li class="logo-li"><p><img src="../img/main_logo.png" alt="logo"/></p></li>
+                        <li><p>Hounter</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="nav-blok__links">
+                        <a href="#second-part" class="scroll-to"><li class="link-item">About us</li></a>
+                        <a href="#third-part" class="scroll-to"><li class="link-item">Article</li></a> 
+                        <li class="link-item">
+                            <ul class="property_ul">
+                                Property<span class="link-item__span"><img src="./img/Vector.png"></span>
+                                <li class="menu_element">House</li>
+                                <li class="menu_element">Apart</li>
+                                <li class="menu_element">Villa</li>
+                            </ul>
+                        </li>
+                        <a href="#"><li class="nav-blok-btn">Sign Up!</li></a>
+                    </ul>
+                </div>
             </div>
             <div class="text-elem">
                 <div class="text-elem__header">find the place to<br/> live 
@@ -30,7 +45,7 @@
                 <div class="search-blok">
                     <input class="search-blok__input" type="text">
                     <div class="search-blok__btn">
-                        <span class="search-blok__btn-text">Search</span>
+                        <a href="#"><span class="search-blok__btn-text">Search</span></a>
                         <span class="search-blok__btn-arrow"><img src="./img/Vector_right.png"></span>
                     </div>
                     <div class="search-blok__pic-location"><img src="./img/search_locatio.png"/></div>
@@ -74,7 +89,7 @@
 
             </div>
         </div>
-        <div class="second-part">
+        <div class="second-part" id="second-part">
             <img class="img_gradient" src="./img/Vector (1).png"/>
             <img class="img_gradient" src="./img/Vector (2).png"/>
             <div class="second-part__header">
@@ -92,7 +107,7 @@
                         <span class="three-btn__pic">
                             <img src="./img/house_vector.png"/>
                         </span>
-                        <span>House</span>
+                        <spanz>House</spanz>
                     </div>
                     <div class="three-btn__item">
                         <span class="three-btn__pic">
@@ -167,6 +182,72 @@
                     </div>
                 </div>
                 <div class="second-part__pic-blok-item">
+                    <div class="pic-blok-item-img">
+                        <img src="./img/second_part_pic1.png"/>
+                        <img class="pic-blok-item-img__status" src="./img/popular.png"/>
+                    </div>
+                    <div class="pic-blok-item-desc">
+                        <div class="pic-blok-item-desc__header">Roselands House</div>
+                        <div class="pic-blok-item-desc__sum">$ 35.000.000</div>
+                        <div class="pic-blok-item-desc__person">
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person1.png"/></div>
+                            <div class="pic-blok-item-desc__text-info">
+                                <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
+                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="second-part__pic-blok-item">
+                    <div class="pic-blok-item-img">
+                        <img src="./img/second_part_pic2.png"/>
+                        <img class="pic-blok-item-img__status" src="./img/new_house.png"/></div>
+                    <div class="pic-blok-item-desc">
+                        <div class="pic-blok-item-desc__header">Woodlandside</div>
+                        <div class="pic-blok-item-desc__sum">$ 20.000.000</div>
+                        <div class="pic-blok-item-desc__person">
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person2.png"/></div>
+                            <div class="pic-blok-item-desc__text-info">
+                                <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
+                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-part__pic-blok-item">
+                    <div class="pic-blok-item-img">
+                        <img src="./img/second_part_pic1.png"/>
+                        <img class="pic-blok-item-img__status" src="./img/popular.png"/>
+                    </div>
+                    <div class="pic-blok-item-desc">
+                        <div class="pic-blok-item-desc__header">Roselands House</div>
+                        <div class="pic-blok-item-desc__sum">$ 35.000.000</div>
+                        <div class="pic-blok-item-desc__person">
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person1.png"/></div>
+                            <div class="pic-blok-item-desc__text-info">
+                                <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
+                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="second-part__pic-blok-item">
+                    <div class="pic-blok-item-img">
+                        <img src="./img/second_part_pic2.png"/>
+                        <img class="pic-blok-item-img__status" src="./img/new_house.png"/></div>
+                    <div class="pic-blok-item-desc">
+                        <div class="pic-blok-item-desc__header">Woodlandside</div>
+                        <div class="pic-blok-item-desc__sum">$ 20.000.000</div>
+                        <div class="pic-blok-item-desc__person">
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person2.png"/></div>
+                            <div class="pic-blok-item-desc__text-info">
+                                <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
+                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="second-part__pic-blok-item">
                     <div class="pic-blok-item-img"><img src="./img/second_part_pic4.png"/></div>
                     <div class="pic-blok-item-desc">
                         <div class="pic-blok-item-desc__header">Cosmo's House</div>
@@ -179,10 +260,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
-        <div class="third-part">
+        <div class="third-part" id="third-part">
             <div class="let-tour-blok">
                 <div class="ready-to-sell">
                     <span class="ready-to-sell__line"><img src="./img/line_sec-blok.png"/></span>
@@ -324,4 +405,6 @@
         </div>
     </div>
 </body>
+<script src="./jqery.js">
+</script>
 </html>
