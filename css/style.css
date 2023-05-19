@@ -1201,7 +1201,7 @@ a {
     }
 
     .two-arrows {
-        margin-left: 40px;
+        margin-left: 0px;
         justify-content: center;
     }
 }
@@ -1239,9 +1239,14 @@ a {
     .third-part-pic-blok {
         display: none;
     }
-
+    .first-part__container {
+        margin-left: 0px;
+    }
     .third-part {
-       margin-left: 30px;
+       margin-left: 0px;
+    }
+    .second-part {
+        margin-left: 0px;
     }
     .nav-blok_active {
         padding: 10px 0px 0px 120px;
@@ -1331,12 +1336,12 @@ a {
     .two-arrows__right-item {
         padding: 13px 20px;
     }
-
+/* 
     .second-part {
         margin-left: 30px;
-    }
+    } */
     .fife-part{
-        margin-left: 30px;
+        margin-left: 0px;
     }
     .three-btn {
         margin-left: 0px;
@@ -1381,7 +1386,6 @@ a {
         margin: 0 auto;
     }
     .first-part__container {
-        margin-left: 20px;
         padding-right: 10px;
     }
 
