@@ -1,101 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="./slick.min.js"></script>
     <link rel="stylesheet" href="./slick.css">
-    <title>Document</title>
+    <title>Hounter</title>
 </head>
+
 <body>
     <div class="wrapper-div">
         <div class="first-part">
             <div class="nav-blok">
                 <div>
                     <ul class="nav-blok__logo">
-                        <li class="logo-li"><p><img src="../img/main_logo.png" alt="logo"/></p></li>
-                        <li><p>Hounter</p></li>
+                        <li class="logo-li">
+                            <p><img src="../img/main_logo.png" alt="logo" /></p>
+                        </li>
+                        <li>
+                            <p>Hounter</p>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <ul class="nav-blok__links">
-                        <a href="#second-part" class="scroll-to"><li class="link-item">About us</li></a>
-                        <a href="#third-part" class="scroll-to"><li class="link-item">Article</li></a> 
+                        <a href="#second-part" class="scroll-to">
+                            <li class="link-item">About us</li>
+                        </a>
+                        <a href="#third-part" class="scroll-to">
+                            <li class="link-item">Article</li>
+                        </a>
                         <li class="link-item">
-                            <ul class="property_ul">
-                                Property<span class="link-item__span"><img src="./img/Vector.png"></span>
-                                <a href="#second-part" class="scroll-to"><li class="menu_element">House</li></a>
-                                <a href="#second-part" class="scroll-to"><li class="menu_element">Apart</li></a>
-                                <a href="#second-part" class="scroll-to"><li class="menu_element">Villa</li></a>
+                            <span class="property_ul">Property<span class="link-item__span"><img src="./img/Vector.png"></span></span>
+                            <ul >
+                               
+
+                                <li class="menu_element"><a href="#second-part" class="scroll-to">House</a></li>
+
+
+                                <li class="menu_element"><a href="#second-part" class="scroll-to">Apart</a></li>
+
+
+                                <li class="menu_element"> <a href="#second-part" class="scroll-to">Villa</a></li>
                             </ul>
                         </li>
-                        <a href="#"><li class="nav-blok-btn">Sign Up!</li></a>
+                        <a href="#">
+                            <li class="nav-blok-btn">Sign Up!</li>
+                        </a>
                     </ul>
                 </div>
             </div>
-            <div class="text-elem">
-                <div class="text-elem__header">find the place to<br/> live 
-                    <span class="your-dreams">your dreams</span><br/>
-                    easily here</div>
-                <div class="text-elem__label">Everything you need about finding your place to live will be here, where it will be easier for you</div>
-                <div class="search-blok">
-                    <input class="search-blok__input" type="text">
-                    <div class="search-blok__btn">
-                        <a href="#"><span class="search-blok__btn-text">Search</span></a>
-                        <span class="search-blok__btn-arrow"><img src="./img/Vector_right.png"></span>
-                    </div>
-                    <div class="search-blok__pic-location"><img src="./img/search_locatio.png"/></div>
-                </div>
-                <div class="text-elem__partnership">
-                    <div class="partnership-text">Our Partnership</div>
-                    <div class="partnership-pic">
-                        <div class="partnership-pic__item"><img src="./img/traveloka_logo 2.png"/></div>
-                        <div class="partnership-pic__item"><img src="./img/traveloka_logo 3.png"/></div>
-                        <div class="partnership-pic__item"><img src="./img/traveloka_logo 4.png"/></div>
-                        <div class="partnership-pic__item"><img src="./img/traveloka_logo 5.png"/></div>
-                    </div>
-                </div>
-            </div>
-            <div class="img-elem">
-                <img class="img-elem__decor" src="./img/Group 9.png"/>
-                <div class="pic-house">
-                    <div class="pic-house__bloks-in-pic">
-                        <div class="pic-house__blok-1">
-                            <div class="pic-house__pic-in-blok">
-                                <img class= "pic-in-blok-item" src="./img/person1.png"/>
-                                <img class= "pic-in-blok-item" src="./img/person2.png"/>
-                                <img class= "pic-in-blok-item" src="./img/person3.png"/>
-                            </div>
-                            <div class="pic-house__text-in-blok">
-                                <p class="text-in-blok-bold">1K+ People</p>
-                                <p class="text-in-blok-regular">Successfully Getting Home</p>
-                            </div>
+            <div class="first-part__container">
+                <div class="text-elem">
+                    <div class="text-elem__header">find the place to<br /> live
+                        <span class="your-dreams">your dreams</span><br />
+                        easily here</div>
+                    <p class="text-elem__label">Everything you need about finding your place to live will be here, where
+                        it will be easier for you</p>
+                    <div class="search-blok">
+                        <input class="search-blok__input" type="text" placeholder="Search for the location you want!">
+                        <div class="search-blok__btn">
+                            <a href="#"><span class="search-blok__btn-text">Search</span></a>
+                            <span class="search-blok__btn-arrow"><img src="./img/Vector_right.png"></span>
                         </div>
-                        <div class="pic-house__blok-2">
-                            <div class="pic-house__pic-in-blok">
-                                <img class= "pic-house__blok-2__pic-in-blok-item" src="./img/pic-1.png"/>
-                            </div>
-                            <div class="pic-house__text-in-blok">
-                                <p class="text-in-blok-bold">56 Houses</p>
-                                <p class="text-in-blok-regular">Sold Monthly</p>
-                            </div>
+                        <div class="search-blok__pic-location"><img src="./img/search_locatio.png" /></div>
+                    </div>
+                    <div class="text-elem__partnership">
+                        <div class="partnership-text">Our Partnership</div>
+                        <div class="partnership-pic">
+                            <div class="partnership-pic__item"><img src="./img/traveloka_logo 2.png" /></div>
+                            <div class="partnership-pic__item"><img src="./img/traveloka_logo 3.png" /></div>
+                            <div class="partnership-pic__item"><img src="./img/traveloka_logo 4.png" /></div>
+                            <div class="partnership-pic__item"><img src="./img/traveloka_logo 5.png" /></div>
                         </div>
                     </div>
                 </div>
+                <div class="img-elem">
+                    <div class="pic-house">
+                        <img src="./img/main_pic.png" alt="" class="pic-house__img">
+                        <div class="pic-house__bloks-in-pic">
+                            <div class="pic-house__blok-1">
+                                <div class="pic-house__pic-in-blok">
+                                    <img class="pic-in-blok-item" src="./img/person1.png" />
+                                    <img class="pic-in-blok-item" src="./img/person2.png" />
+                                    <img class="pic-in-blok-item" src="./img/person3.png" />
+                                </div>
+                                <div class="pic-house__text-in-blok">
+                                    <p class="text-in-blok-bold">1K+ People</p>
+                                    <p class="text-in-blok-regular">Successfully Getting Home</p>
+                                </div>
+                            </div>
+                            <div class="pic-house__blok-2">
+                                <div class="pic-house__pic-in-blok">
+                                    <img class="pic-house__blok-2__pic-in-blok-item" src="./img/pic-1.png" />
+                                </div>
+                                <div class="pic-house__text-in-blok">
+                                    <p class="text-in-blok-bold">56 Houses</p>
+                                    <p class="text-in-blok-regular">Sold Monthly</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
             </div>
         </div>
         <div class="second-part" id="second-part">
-            <img class="img_gradient" src="./img/Vector (1).png"/>
-            <img class="img_gradient" src="./img/Vector (2).png"/>
+            <img class="img_gradient" src="./img/Vector (1).png" />
+            <img class="img_gradient" src="./img/Vector (2).png" />
             <div class="second-part__header">
                 <div class="featured-house-blok">
                     <div class="our-recomend">
-                        <span class="our-recomend__line"><img src="./img/line_sec-blok.png"/></span>
+                        <span class="our-recomend__line"><img src="./img/line_sec-blok.png" /></span>
                         <span class="our-recomend__text">Our Recommendation</span>
                     </div>
                     <div id="featured-house" class="featured-house">
@@ -105,160 +127,160 @@
                 <div class="three-btn">
                     <div class="three-btn__item" id="house-btn">
                         <span class="three-btn__pic">
-                            <img src="./img/house_vector.png"/>
+                            <img src="./img/house_vector.png" />
                         </span>
                         <span>House</span>
                     </div>
                     <div class="three-btn__item" id="apart-btn">
                         <span class="three-btn__pic">
-                            <img src="./img/apart_vector.png"/>
+                            <img src="./img/apart_vector.png" />
                         </span>
                         <span>Villa</span>
                     </div>
                     <div class="three-btn__item" id="villa-btn">
                         <span class="three-btn__pic">
-                            <img src="./img/house_fill_vector.png"/>
+                            <img src="./img/house_fill_vector.png" />
                         </span>
                         <span>Apartment</span>
                     </div>
                 </div>
                 <div class="two-arrows">
                     <div class="two-arrows__left-item">
-                        <img src="./img/arrow-left-sec-blok.png"/>
+                        <img src="./img/arrow-left-sec-blok.png" />
                     </div>
                     <div class="two-arrows__right-item">
-                        <img src="./img/arrow-right-sec-blok.png"/>
+                        <img src="./img/arrow-right-sec-blok.png" />
                     </div>
                 </div>
             </div>
             <div class="second-part__pic-blok">
                 <div class="second-part__pic-blok-item">
                     <div class="pic-blok-item-img">
-                        <img class="pic-blok-item-img__house" src="./img/second_part_pic1.png"/>
-                        <img class="pic-blok-item-img__status" src="./img/popular.png"/>
+                        <img class="pic-blok-item-img__house" src="./img/second_part_pic1.png" />
+                        <img class="pic-blok-item-img__status" src="./img/popular.png" />
                     </div>
                     <div class="pic-blok-item-desc">
                         <div class="pic-blok-item-desc__header">Roselands House</div>
                         <div class="pic-blok-item-desc__sum">$ 35.000.000</div>
                         <div class="pic-blok-item-desc__person">
-                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person1.png"/></div>
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person1.png" /></div>
                             <div class="pic-blok-item-desc__text-info">
                                 <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
-                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-                <div class="second-part__pic-blok-item">
-                    <div class="pic-blok-item-img">
-                        <img class="pic-blok-item-img__villa" src="./img/second_part_pic2.png"/>
-                        <img class="pic-blok-item-img__status" src="./img/new_house.png"/></div>
-                    <div class="pic-blok-item-desc">
-                        <div class="pic-blok-item-desc__header">Woodlandside</div>
-                        <div class="pic-blok-item-desc__sum">$ 20.000.000</div>
-                        <div class="pic-blok-item-desc__person">
-                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person2.png"/></div>
-                            <div class="pic-blok-item-desc__text-info">
-                                <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
-                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                                <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="second-part__pic-blok-item">
                     <div class="pic-blok-item-img">
-                        <img class="pic-blok-item-img__apartment" src="./img/second_part_pic3.png"/>
-                        <img class="pic-blok-item-img__status" src="./img/best_deals.png"/></div>
+                        <img class="pic-blok-item-img__villa" src="./img/second_part_pic2.png" />
+                        <img class="pic-blok-item-img__status" src="./img/new_house.png" /></div>
+                    <div class="pic-blok-item-desc">
+                        <div class="pic-blok-item-desc__header">Woodlandside</div>
+                        <div class="pic-blok-item-desc__sum">$ 20.000.000</div>
+                        <div class="pic-blok-item-desc__person">
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person2.png" /></div>
+                            <div class="pic-blok-item-desc__text-info">
+                                <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
+                                <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-part__pic-blok-item">
+                    <div class="pic-blok-item-img">
+                        <img class="pic-blok-item-img__apartment" src="./img/second_part_pic3.png" />
+                        <img class="pic-blok-item-img__status" src="./img/best_deals.png" /></div>
                     <div class="pic-blok-item-desc">
                         <div class="pic-blok-item-desc__header">The Old Lighthouse</div>
                         <div class="pic-blok-item-desc__sum">$ 44.000.000</div>
                         <div class="pic-blok-item-desc__person">
-                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person3.png"/></div>
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person3.png" /></div>
                             <div class="pic-blok-item-desc__text-info">
                                 <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
-                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                                <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="second-part__pic-blok-item">
                     <div class="pic-blok-item-img">
-                        <img class="pic-blok-item-img__house" src="./img/second_part_pic1.png"/>
-                        <img class="pic-blok-item-img__status" src="./img/popular.png"/>
+                        <img class="pic-blok-item-img__house" src="./img/second_part_pic1.png" />
+                        <img class="pic-blok-item-img__status" src="./img/popular.png" />
                     </div>
                     <div class="pic-blok-item-desc">
                         <div class="pic-blok-item-desc__header">Roselands House</div>
                         <div class="pic-blok-item-desc__sum">$ 35.000.000</div>
                         <div class="pic-blok-item-desc__person">
-                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person1.png"/></div>
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person1.png" /></div>
                             <div class="pic-blok-item-desc__text-info">
                                 <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
-                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-                <div class="second-part__pic-blok-item">
-                    <div class="pic-blok-item-img">
-                        <img class="pic-blok-item-img__villa" src="./img/second_part_pic2.png"/>
-                        <img class="pic-blok-item-img__status" src="./img/new_house.png"/></div>
-                    <div class="pic-blok-item-desc">
-                        <div class="pic-blok-item-desc__header">Woodlandside</div>
-                        <div class="pic-blok-item-desc__sum">$ 20.000.000</div>
-                        <div class="pic-blok-item-desc__person">
-                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person2.png"/></div>
-                            <div class="pic-blok-item-desc__text-info">
-                                <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
-                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                                <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="second-part__pic-blok-item">
                     <div class="pic-blok-item-img">
-                        <img class="pic-blok-item-img__house" src="./img/second_part_pic1.png"/>
-                        <img class="pic-blok-item-img__status" src="./img/popular.png"/>
+                        <img class="pic-blok-item-img__villa" src="./img/second_part_pic2.png" />
+                        <img class="pic-blok-item-img__status" src="./img/new_house.png" /></div>
+                    <div class="pic-blok-item-desc">
+                        <div class="pic-blok-item-desc__header">Woodlandside</div>
+                        <div class="pic-blok-item-desc__sum">$ 20.000.000</div>
+                        <div class="pic-blok-item-desc__person">
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person2.png" /></div>
+                            <div class="pic-blok-item-desc__text-info">
+                                <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
+                                <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-part__pic-blok-item">
+                    <div class="pic-blok-item-img">
+                        <img class="pic-blok-item-img__house" src="./img/second_part_pic1.png" />
+                        <img class="pic-blok-item-img__status" src="./img/popular.png" />
                     </div>
                     <div class="pic-blok-item-desc">
                         <div class="pic-blok-item-desc__header">Roselands House</div>
                         <div class="pic-blok-item-desc__sum">$ 35.000.000</div>
                         <div class="pic-blok-item-desc__person">
-                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person1.png"/></div>
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person1.png" /></div>
                             <div class="pic-blok-item-desc__text-info">
                                 <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
-                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
-                            </div>   
-                        </div>
-                    </div>
-                </div>
-                <div class="second-part__pic-blok-item">
-                    <div class="pic-blok-item-img">
-                        <img class="pic-blok-item-img__villa" src="./img/second_part_pic2.png"/>
-                        <img class="pic-blok-item-img__status" src="./img/new_house.png"/></div>
-                    <div class="pic-blok-item-desc">
-                        <div class="pic-blok-item-desc__header">Woodlandside</div>
-                        <div class="pic-blok-item-desc__sum">$ 20.000.000</div>
-                        <div class="pic-blok-item-desc__person">
-                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person2.png"/></div>
-                            <div class="pic-blok-item-desc__text-info">
-                                <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
-                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                                <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="second-part__pic-blok-item">
                     <div class="pic-blok-item-img">
-                        <img class="pic-blok-item-img__apartment" src="./img/second_part_pic3.png"/>
-                        <img class="pic-blok-item-img__status" src="./img/best_deals.png"/></div>
+                        <img class="pic-blok-item-img__villa" src="./img/second_part_pic2.png" />
+                        <img class="pic-blok-item-img__status" src="./img/new_house.png" /></div>
+                    <div class="pic-blok-item-desc">
+                        <div class="pic-blok-item-desc__header">Woodlandside</div>
+                        <div class="pic-blok-item-desc__sum">$ 20.000.000</div>
+                        <div class="pic-blok-item-desc__person">
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person2.png" /></div>
+                            <div class="pic-blok-item-desc__text-info">
+                                <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
+                                <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-part__pic-blok-item">
+                    <div class="pic-blok-item-img">
+                        <img class="pic-blok-item-img__apartment" src="./img/second_part_pic3.png" />
+                        <img class="pic-blok-item-img__status" src="./img/best_deals.png" /></div>
                     <div class="pic-blok-item-desc">
                         <div class="pic-blok-item-desc__header">The Old Lighthouse</div>
                         <div class="pic-blok-item-desc__sum">$ 44.000.000</div>
-                        <div class="pic-blok-item-desc__person">
-                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person3.png"/></div>
+                        <div class="pic-blok-item-desc__person ">
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person3.png" /></div>
                             <div class="pic-blok-item-desc__text-info">
                                 <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
-                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                                <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
                             </div>
                         </div>
                     </div>
@@ -268,7 +290,7 @@
         <div class="third-part" id="third-part">
             <div class="let-tour-blok">
                 <div class="ready-to-sell">
-                    <span class="ready-to-sell__line"><img src="./img/line_sec-blok.png"/></span>
+                    <span class="ready-to-sell__line"><img src="./img/line_sec-blok.png" /></span>
                     <span class="ready-to-sell__text">Ready to Sell!</span>
                 </div>
                 <div class="let-tour">
@@ -284,102 +306,96 @@
                     <div class="house-detail-blok__table">
                         <div class="house-detail-blok__table-item">
                             <div class="table-item-pic">
-                                <img src="./img/bedroom.png"/>
+                                <img src="./img/bedroom.png" />
                             </div>
                             <div class="table-item-text">4 Bedrooms</div>
                         </div>
                         <div class="house-detail-blok__table-item">
                             <div class="table-item-pic">
-                                <img src="./img/carport.png"/>
+                                <img src="./img/carport.png" />
                             </div>
                             <div class="table-item-text">1 Carport</div>
                         </div>
                         <div class="house-detail-blok__table-item">
                             <div class="table-item-pic">
-                                <img src="./img/bathroom.png"/>
+                                <img src="./img/bathroom.png" />
                             </div>
                             <div class="table-item-text">2 Bathrooms</div>
                         </div>
                         <div class="house-detail-blok__table-item">
                             <div class="table-item-pic">
-                                <img src="./img/floors.png"/>
+                                <img src="./img/floors.png" />
                             </div>
                             <div class="table-item-text">2 Floors</div>
                         </div>
                     </div>
-                    <div class="after-table-line">                      
+                    <div class="after-table-line">
                     </div>
                     <div class="contact-blok">
-                        <div class="pic-blok-item-desc__person">
-                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person4.png"/></div>
+                        <div class="pic-blok-item-desc__person pic-blok-item-desc__person_third-part">
+                            <div class="pic-blok-item-desc__person-photo"><img src="./img/person4.png" /></div>
                             <div class="pic-blok-item-desc__text-info">
                                 <div class="pic-blok-item-desc__person-name">Dianne Russell</div>
-                            <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
+                                <div class="pic-blok-item-desc__person-adress">Manchester, Kentucky</div>
                             </div>
                         </div>
                         <div class="contact-blok__btn">
-                            <span class="contact-blok__btn-pic"><img src="./img/call-pic.png"/></span>
+                            <span class="contact-blok__btn-pic"><img src="./img/call-pic.png" /></span>
                             <span class="contact-blok__btn-text">Contact Now</span>
                         </div>
                     </div>
 
-                    
+
                 </div>
             </div>
             <div class="third-part-pic-blok">
-                <div class="third-part-pic-blok__item">
-                    <img src="./img/third-sec-big-pic.png"/>
-                    <img class="play-btn" src="./img/play-btn.png"/>
-                    
-                </div>
-                <div class="third-part-pic-blok__item">
-                    <img src="./img/third-sec-medium-pic.png"/>
-                </div>
-                <div class="third-part-pic-blok__item">
-                    <img src="./img/third-sec-small-pic-left.png"/>
-                </div>
-                <div class="third-part-pic-blok__item">
-                    <img src="./img/third-sec-small-pic-right.png"/>
-                </div>
+                <img src="./img/img_all_3_part.png"/>            
             </div>
         </div>
-        <div class="fourth-part">
-          <div class="fourth-part__container">
+<div class="fourth-part-main-div">
+    <div class="fourth-part">
+        <div class="fourth-part__container">
             <div class="fourth-part__text">
-                                Subscribe For More Info
-                    and update from Hounter
+                Subscribe For More Info
+                and update from Hounter
             </div>
             <div class="fourth-part__search-blok">
                 <input class="fourth-part__input" type="text" placeholder="Your email here">
                 <div class="fourth-part__btn">
                     <span class="fourth-part__btn-text">Subscribe Now</span>
                 </div>
-                <div class="fourth-part__pic-email"><img src="./img/email-pic.png"/></div>
+                <div class="fourth-part__pic-email"><img src="./img/email-pic.png" /></div>
             </div>
-          </div>
-          <div class="fourth-part__pic"><img src="./img/pic-3.png"/></div>
-          <div class="fourth-part__pic"><img src="./img/pic-2.png"/></div>
-          <div class="fourth-part__pic"><img src="./img/pic-4.png"/></div>
-          <div class="fourth-part__pic"><img src="./img/pic-1.png"/></div>
-          <div class="fourth-part__pic"><img src="./img/person1.png"/></div>
-          <div class="fourth-part__pic"><img src="./img/person2.png"/></div>
-          <div class="fourth-part__pic"><img src="./img/person3.png"/></div>
-          <div class="fourth-part__pic"><img src="./img/person4.png"/></div>
-
         </div>
+        <div class="fourth-part__pic"><img src="./img/pic-3.png" /></div>
+        <div class="fourth-part__pic"><img src="./img/pic-2.png" /></div>
+        <div class="fourth-part__pic"><img src="./img/pic-4.png" /></div>
+        <div class="fourth-part__pic"><img src="./img/pic-1.png" /></div>
+        <div class="fourth-part__pic"><img src="./img/person1.png" /></div>
+        <div class="fourth-part__pic"><img src="./img/person2.png" /></div>
+        <div class="fourth-part__pic"><img src="./img/person3.png" /></div>
+        <div class="fourth-part__pic"><img src="./img/person4.png" /></div>
+
+    </div>
+</div>
         <div class="fife-part">
             <div class="fife-part__left-blok">
-                <ul class="nav-blok__logo">
-                    <li class="logo-li"><p><img src="../img/main_logo.png" alt="logo"/></p></li>
-                    <li><p>Hounter</p></li>
+                <ul class="nav-blok__logo nav-blok__logo_footer">
+                    <li class="logo-li">
+                        <p><img src="../img/main_logo.png" alt="logo" /></p>
+                    </li>
+                    <li>
+                        <p>Hounter</p>
+                    </li>
                 </ul>
                 <div class="fife-part-left-blok-text">
-                    We provide information about properties such as houses, villas and apartments to help people find their dream home
+                    We provide information about properties such as houses, villas and apartments to help people find
+                    their dream home
                 </div>
                 <div class="fife-part__social-div">
-                    <div class="fife-part__social-div-item"><img src="./img/brandico_facebook.png"/></div>
-                    <div class="fife-part__social-div-item"><img src="./img/ant-design_twitter-outlined.png"/></div>
-                    <div class="fife-part__social-div-item"><img src="./img/ant-design_instagram-filled.png"/></div>
+                    <div class="fife-part__social-div-item"><img src="./img/brandico_facebook.png" /></div>
+                    <div class="fife-part__social-div-item"><img src="./img/ant-design_twitter-outlined.png" /></div>
+                    <div class="fife-part__social-div-item"><img src="./img/ant-design_instagram-filled.png" /></div>
                 </div>
             </div>
             <div class="fife-part__right-blok">
@@ -395,7 +411,7 @@
                     <p class="fife-part__item-text">Popular article</p>
                     <p class="fife-part__item-text">Most read</p>
                     <p class="fife-part__item-text">Tips & Tricks</p>
-                   
+
                 </div>
                 <div class="fife-part__contact">
                     <p class="fife-part__header">Contact</p>
@@ -409,4 +425,5 @@
 </body>
 <script src="./jqery.js">
 </script>
+
 </html>
