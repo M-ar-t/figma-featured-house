@@ -1,5 +1,5 @@
 ## Верстка макетов с Figma
-- Это простая страница ([смотреть по ссылке](https://m-ar-t.github.io/Figma/))
+- Это простая страница ([смотреть по ссылке](https://m-ar-t.github.io/figma-featured-house/)
 - Используется:
   - HTML5
   - CSS 3.0
