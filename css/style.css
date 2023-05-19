@@ -998,7 +998,9 @@ a {
         column-gap: 30px;
     }
     .fourth-part-main-div {
-        margin-left: 60px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
     }
     .third-part {
         margin-left: 60px;
@@ -1058,7 +1060,7 @@ a {
     }
 
     .search-blok__btn {
-        top: calc(50% - 20.5px);
+        top: calc(50% - 20px);
         right: 0px;
         font-size: 12px;
     }
@@ -1313,9 +1315,9 @@ a {
     .fourth-part__input::placeholder {
         color: transparent;
     }
-    .fourth-part-main-div {
+    /* .fourth-part-main-div {
         margin-left: 30px;
-    }
+    } */
     .fourth-part__text {
         font-size: 23px;
 
@@ -1418,9 +1420,9 @@ a {
     .fife-part{
         margin-left: 10px;
     }
-    .fourth-part-main-div {
+    /* .fourth-part-main-div {
         margin-left: 10px;
-    }
+    } */
     .third-part {
         margin-left: 10px;
     }
