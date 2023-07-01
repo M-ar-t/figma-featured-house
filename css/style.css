@@ -61,6 +61,7 @@ a {
 }
 
 .pic-house {
+    margin-left: 10px;
     position: relative;
 }
 
@@ -227,7 +228,8 @@ a {
 }
 
 .search-blok__input {
-    width: 432px;
+    box-sizing: border-box;
+    width: 496px;
     border-radius: 32px;
     height: 54px;
     border: 1px solid rgb(224, 227, 235);
@@ -260,11 +262,12 @@ a {
 
 .search-blok__btn {
     display: flex;
+    box-sizing: border-box;
     align-items: center;
     background-color: rgb(16, 185, 129);
     border-radius: 32px;
-    width: 77px;
-    height: 23px;
+    width: 109px;
+    height: 54px;
     padding: 13px 16px;
     font-family: Lexend;
     font-style: normal;
@@ -280,7 +283,7 @@ a {
 
 .search-blok__btn {
     position: absolute;
-    top: 4px;
+    top: 0px;
     right: 0px;
 }
 
@@ -986,11 +989,11 @@ a {
     }
 
     .search-blok {
-        width: 400px;
+        width: 464px;
     }
 
     .search-blok__input {
-        width: 336px;
+        width: 400px;
 
     }
 
@@ -1052,7 +1055,7 @@ a {
     }
 
     .search-blok__input {
-        width: 200px;
+        width: 264px;
         height: 44px;
     }
 
@@ -1078,12 +1081,9 @@ a {
         height: auto;
     }
 
-    .search-blok__btn {
-        top: 0px;
-        right: -2px;
+    .search-blok__btn {  
+        height: 44px;
         font-size: 12px;
-        height: 47.6px;
-        box-sizing: border-box;
     }
 
     .partnership-text {
@@ -1396,9 +1396,7 @@ a {
     .fourth-part__input::placeholder {
         color: transparent;
     }
-    /* .fourth-part-main-div {
-        margin-left: 30px;
-    } */
+   
     .fourth-part__text {
         font-size: 23px;
 
@@ -1412,10 +1410,7 @@ a {
     .two-arrows__right-item {
         padding: 13px 20px;
     }
-/* 
-    .second-part {
-        margin-left: 30px;
-    } */
+
     .fife-part{
         margin-left: 0px;
     }
@@ -1503,9 +1498,7 @@ a {
     .fife-part{
         margin-left: 10px;
     }
-    /* .fourth-part-main-div {
-        margin-left: 10px;
-    } */
+   
     .third-part {
         margin-left: 10px;
     }
