@@ -939,6 +939,29 @@ a {
     margin-left: 0px;
 }
 
+
+.nav-burger{
+    display: none;
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+.burger-line{
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(14, 23, 53);
+}
+.burger-line:first-child{
+    top:0
+}
+.burger-line:nth-child(2){
+    top:calc(50% - 1px)
+}
+.burger-line:last-child{
+    bottom:0
+}
 @media screen and (max-width: 1200px) {
     .fourth-part__pic-email {
         left: 24px;
@@ -1205,6 +1228,39 @@ a {
 }
 
 @media screen and (max-width: 780px) {
+    .link-item:hover {
+        background-color:unset;
+        cursor: pointer;
+    }
+    .menu_element a{
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.619);
+    }
+    .header-nav-close{
+        position: fixed;
+        top:20px;
+        right: 20px;
+        display: none;
+        width: 30px;
+        height: 30px;
+        z-index: 1000;
+        position: relative;
+    }
+    .close-line{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transform: rotate(45deg);
+    }
+    .close-line:first-child{
+        transform: rotate(-45deg);
+    }
+    .nav-burger{
+        display: block;
+        margin-right: 60px;     
+    }
     .fife-part__header {
         text-align: center;
     }
@@ -1272,9 +1328,31 @@ a {
     }
 
     .nav-blok__links {
+        position: fixed;
+        transform: translate(-100%);
+        transition: .4s;
+        flex-direction: column;
+        display: flex;
+        top:0px;
+        left: 0px;
+        height: 100vh;
+        width: 100%;
+        background-color: #8fcbe4;
+       padding: 40px 0px;
+    }
+    .link-item {
+        border: none;
+        color: rgb(240, 243, 253);
+        text-transform: uppercase;
+        font-size: 28px;
+        height: auto;
+        padding: 0px;
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+    .nav-blok-btn{
         display: none;
     }
-
     .img-elem {
         display: none;
     }
@@ -1387,8 +1465,11 @@ a {
         padding-right: 10px;
     }
 
-    .nav-blok__logo {
+    .nav-blok__logo, .nav-burger {
         margin-left: 20px;
+    }
+    .nav-burger{
+        margin-right: 20px;     
     }
 
     .text-elem {

@@ -7,7 +7,6 @@ jQuery(function(){
         if($(window).scrollTop()>60){
             navBlok.addClass('nav-blok_active')
             if (flag){
-                console.log('2');
                 $('.menu_element').slideUp()
                 flag = !flag
           }
@@ -19,9 +18,7 @@ jQuery(function(){
 
 
       if($(window).scrollTop()>60){
-        console.log('1');
         if (!flag){
-            console.log('2');
             $('.menu_element').slideDown()
             flag = !flag
       }
@@ -103,31 +100,21 @@ jQuery(function(){
         flag = !flag
       })
 
-      $('.header_burger').on('click',()=>{
-        $('.burger_menu').css({transform: 'translateX(0)'})
-        $('.header_burger').hide()
+      $('.nav-burger').on('click',()=>{
+        $('.nav-blok__links').css({
+          transform: 'translateX(0)',
+          transition: '.4s'})
+        $('.nav-burger').hide()
         $('.header-nav-close').css({
-          'display': 'block',
-          'margin-left':'380px',
-          'z-index': 1000
+          'display': 'block'
       })
       })
 
 
       $('.header-nav-close').on('click',()=>{
-        $('.burger_menu').css({transform: 'translateX(100%)'})
-        $('.header_burger').show()
+        $('.nav-blok__links').css({transform: 'translateX(100%)'})
+        $('.nav-burger').show()
         $('.header-nav-close').hide()
-      })
-
-      let burger_menu_flag =false
-      $('.burger_menu__property-div').on('click', ()=>{
-        if (!burger_menu_flag){
-            $('.burger_menu__menu_element').slideDown()
-        }else{
-            $('.burger_menu__menu_element').slideUp()
-        }
-        burger_menu_flag = !burger_menu_flag
       })
 
 
@@ -135,6 +122,15 @@ jQuery(function(){
         e.preventDefault();
         var heightBlok = $(".nav-blok").height()
         var anchor = $(this).attr('href');
+
+        if ($(window).width()<780){
+            $('.nav-blok__links').css({
+            transform: 'translateX(-100%)',
+            transition: '.4s'})
+            $('.nav-burger').show()
+            $('.header-nav-close').hide()
+        }
+
         $('html, body').stop().animate({
             scrollTop: $(anchor).offset().top - heightBlok-40
         }, 800);
