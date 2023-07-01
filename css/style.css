@@ -259,6 +259,8 @@ a {
 }
 
 .search-blok__btn {
+    display: flex;
+    align-items: center;
     background-color: rgb(16, 185, 129);
     border-radius: 32px;
     width: 77px;
@@ -506,6 +508,7 @@ a {
 .three-btn__item {
     color: rgb(136, 139, 151);
     display: flex;
+    align-items: center;
     margin-right: 32px;
     font-family: Lexend;
     font-style: normal;
@@ -715,9 +718,7 @@ a {
 .contact-blok {
     display: flex;
 }
-.fourth-part-main-div{
-    margin-left: 120px;
-}
+
 .fourth-part {
     margin: 0 auto 120px;
     display: flex;
@@ -912,7 +913,6 @@ a {
 
 .fife-part__social-div {
     display: flex;
-    margin-right: 24px;
 }
 
 .fife-part__social-div-item {
@@ -1039,10 +1039,6 @@ a {
         top: calc(50% - 12px);
     }
 
-    .text-elem__label {
-        font-size: 12px;
-    }
-
     .img-elem {
         flex-basis: calc(100% - 200px - 150px);
         position: relative;
@@ -1060,9 +1056,11 @@ a {
     }
 
     .search-blok__btn {
-        top: calc(50% - 20px);
-        right: 0px;
+        top: 0px;
+        right: -2px;
         font-size: 12px;
+        height: 47.6px;
+        box-sizing: border-box;
     }
 
     .partnership-text {
@@ -1398,7 +1396,7 @@ a {
     }
 
     .text-elem__header {
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .partnership-pic {
